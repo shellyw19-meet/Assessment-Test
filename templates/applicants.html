@@ -1,9 +1,29 @@
+
 <html>
     <head>
         <title>Applicants</title>
     </head>
 
     <body>
-        <!-- Edit here -->
+        <center>
+        	<br>
+        	<h1>APPLICANTS</h1>
+			<hr>
+
+    <div class = "applicants">
+	{%for i in appl%}
+
+			<div class = "appl">
+				<span>name: {{i.name}}</span>
+				<br>
+				<span>age: {{i.age}}</span>
+				<br>
+				<span>subject: {{i.subject}}</span>
+				<br>
+				<br>
+			</div>
+
+	{%endfor%}
+</div>
     </body>
 </html>
